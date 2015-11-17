@@ -17,9 +17,12 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('gren', 'Grunt plugin for the npm github-release-notes', function() {
     var options = this.options({});
+    var done = this.async();
 
     var gren = new Gren(options);
-    gren.release();
+
+	gren.release().then(done);
+
   });
 
 };
