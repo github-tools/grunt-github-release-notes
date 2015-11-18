@@ -15,9 +15,9 @@ module.exports = function(grunt) {
     gren: {
       release: {
         options: {
-          token: '9d928d384738b0b15604aa440b44587fb65ab042',
-          username: 'digital-detox',
-          repo: 'rbs-xdl'
+          token: {github_token}',
+          username: {github_username},
+          repo: {github_repo_name}
         }
       }
     }
