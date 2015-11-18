@@ -27,7 +27,6 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "github-release-notes": "^0.2.2",
     "grunt": "~0.4.5"
   },
   "peerDependencies": {
@@ -35,5 +34,8 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "github-release-notes": "^0.2.2"
+  }
 }
