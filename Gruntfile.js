@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     gren: {
       release: {
         options: {
-          token: {github_token}',
+          token: {github_token},
           username: {github_username},
           repo: {github_repo_name}
         }
