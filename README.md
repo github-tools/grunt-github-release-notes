@@ -1,7 +1,10 @@
 # grunt-github-release-notes
 
+[![npm version](https://badge.fury.io/js/grunt-github-release-notes.svg)](https://badge.fury.io/js/grunt-github-release-notes)
+
 > Grunt module to publish release notes based on commits between the last two tags.
 This module is using [github-release-notes](https://github.com/alexcanessa/github-release-notes).
+
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
