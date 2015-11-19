@@ -23,15 +23,15 @@ grunt.loadNpmTasks('grunt-github-release-notes');
 
 ### Overview
 In your project's Gruntfile, add a section named `hello` to the data object passed into `grunt.initConfig()`.
-**All `token`, `username` and `repo` are required.**
+**`token`, `username` and `repo` are required.**
 
 ```js
 gren: {
 	release: {
 		options: {
-			token: {github_token},
-			username: {github_username},
-			repo: {github_repo_name}
+			token: 'GITHUB_TOKEN',
+			username: 'GITHUB_USERNAME',
+			repo: 'GITHUB_REPO_NAME'
 		}
 	}
 }
@@ -45,4 +45,4 @@ There are optional arguments such as:
 - `draft: true` To set the release as a draft. Default: `false`
 - `prerelease: true` To set the release as a prerelease. Default: `false`
 - `prefix: 'v'` Add a prefix to the tag version `e.g. v1.0.1`.
-- `force: true` Fails the task if the task presents any errors. Default: `false`
+- `force: true` Doesn't fail the task if the task presents any errors. Default: `false`
