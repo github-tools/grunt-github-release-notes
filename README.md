@@ -22,7 +22,7 @@ grunt.loadNpmTasks('grunt-github-release-notes');
 ## The "release" task
 
 ### Overview
-In your project's Gruntfile, add a section named `hello` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `gren` to the data object passed into `grunt.initConfig()`.
 **`token`, `username` and `repo` are required.**
 
 ```js
