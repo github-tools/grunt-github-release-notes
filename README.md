@@ -46,3 +46,4 @@ There are optional arguments such as:
 - `prerelease: true` To set the release as a prerelease. Default: `false`
 - `prefix: 'v'` Add a prefix to the tag version `e.g. v1.0.1`.
 - `force: true` Doesn't fail the task if the task presents any errors. Default: `false`
+- `includeMessages: merges/commits/all` used to filter the messages added to the release notes. Default: `commits`
