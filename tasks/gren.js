@@ -8,7 +8,7 @@
 
 'use strict';
 
-var Gren = require('github-release-notes/src/index.js');
+var GithubReleaseNotes = require('github-release-notes/src/gren.js');
 
 module.exports = function(grunt) {
 
@@ -18,11 +18,20 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('gren', 'Grunt plugin for the npm github-release-notes', function() {
     var options = this.options({});
     var done = this.async();
+    var gren = new GithubReleaseNotes(options);
 
-    var gren = new Gren(options);
+    if (this.target !== 'release' && this.target !== 'changelog') {
+        throw new Error('The target needs to be either release or changelog');
+    }
 
-	gren.release().then(done);
+    var component = this;
 
+	gren.init()
+		.then(function (success) {
+			if(success) {
+			    return gren[component.target]();
+			}
+		}).then(done);
   });
 
 };
