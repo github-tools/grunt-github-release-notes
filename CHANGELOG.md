@@ -15,5 +15,3 @@
 ## 0.2.0 (19/11/2015)
 
 *No changelog for this release.*
- --- 
-
