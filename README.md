@@ -1,4 +1,4 @@
-# grunt-github-release-notes
+# Grunt Github Release Notes
 
 [![npm version](https://badge.fury.io/js/grunt-github-release-notes.svg)](https://badge.fury.io/js/grunt-github-release-notes)
 
