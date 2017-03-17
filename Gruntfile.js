@@ -8,16 +8,29 @@
 
 'use strict';
 
+var gren_options = {
+    ignoreIssuesWith: [
+        "duplicate",
+        "wontfix",
+        "invalid",
+        "help wanted"
+    ],
+    template: {
+        issue: ({ text, name, url, labels }) => {
+            labels = labels.slice(0, -1);
+
+            return `- [${text}](${url}) ${name} - ${labels}`;
+        },
+        label: "_{{label}}_,"
+    }
+}
+
 module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         gren: {
-            release: {
-                options: {
-                    username: 'github-tools',
-                    repo: 'github-release-notes'
-                }
-            }
+            release: {},
+            changelog: {}
         }
     });
 
